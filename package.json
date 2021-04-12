@@ -8,10 +8,12 @@
     "@testing-library/user-event": "^12.8.3",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
+    "node-sass": "^5.0.0",
     "prettier": "^2.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "source-map-explorer": "^2.5.2",
     "web-vitals": "^1.1.1"
   },
   "husky": {
@@ -25,7 +27,8 @@
     ]
   },
   "scripts": {
-    "start": "react-scripts start",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
